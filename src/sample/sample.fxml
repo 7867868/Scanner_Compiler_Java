@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <AnchorPane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="888.0" style="-fx-background-color: #03040c;" styleClass="scanbtn" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="227.0" layoutY="80.0" prefHeight="52.0" prefWidth="392.0" text="Asad Mehmood" textFill="#d0cbcb">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="132.0" prefHeight="52.0" prefWidth="392.0" text="16-ARID-673" textFill="#d0cbcb">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="184.0" prefHeight="52.0" prefWidth="392.0" text="BSCS-7C" textFill="#d0cbcb">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="359.0" prefHeight="52.0" prefWidth="158.0" text="submitted to:" textFill="#d0cbcb">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="346.0" prefHeight="73.0" prefWidth="545.0" text="Dr. Bilal Bashir" textFill="#50f522">
+               <font>
+                  <Font name="System Bold Italic" size="37.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+   <top>
+      <HBox prefHeight="21.0" prefWidth="888.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnScan" disable="true" mnemonicParsing="false" onAction="#clickScan" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: purple;" text="Scan" textFill="#f4f0f8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <MenuBar prefHeight="28.0" prefWidth="848.0" styleClass="menuBar">
+               <menus>
+                  <Menu id="menuu" fx:id="Menu" mnemonicParsing="false" styleClass="menuu">
+                     <graphic>
+                        <Label id="lmenu" text="File" textAlignment="CENTER" textFill="#d6eb1e" />
+                     </graphic>
+                     <items>
+                        <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" fx:id="btnNew" onAction="#clickNew" text="New" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" fx:id="btnOpen" onAction="#clickOpen" text="Open" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" fx:id="btnSave" disable="true" onAction="#clickSave" text="Save" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" fx:id="btnSaveAs" disable="true" onAction="#clickSaveAs" text="Save as" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" fx:id="btnClose" disable="true" onAction="#clickClose" text="Close" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" onAction="#clickExit" text="Exit" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" styleClass="menuu">
+                     <graphic>
+                        <Label id="lmenu" text="Option" />
+                     </graphic>
+                     <items>
+                        <MenuItem mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" mnemonicParsing="false" text="background color" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" mnemonicParsing="false" text="font size" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" mnemonicParsing="false" text="font color" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Label id="lmenu" text="About" />
+                     </graphic>
+                     <items>
+                        <MenuItem id="menuItem" mnemonicParsing="false" styleClass="menuItem">
+                           <graphic>
+                              <Button id="litem" fx:id="btnAbout" text="Developer Info" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" />
+               </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
